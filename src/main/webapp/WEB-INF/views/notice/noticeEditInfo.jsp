@@ -106,7 +106,7 @@
                 </div>
                 <div class="divTableCell">
                     <input type="text" name="title" maxlength="100"
-                           style="width: 95%"/><%=CmmUtil.nvl(rDTO.getTitle()) %>
+                           style="width: 95%" value="<%=CmmUtil.nvl(rDTO.getTitle()) %>"/>
                 </div>
             </div>
             <div class="divTableRow">

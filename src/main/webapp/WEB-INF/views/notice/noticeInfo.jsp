@@ -101,9 +101,9 @@
             <div class="divTableCell">공지글 여부
             </div>
             <div class="divTableCell">
-                예<input type="radio" name="noticeYn"
+                예<input type="radio" name="noticeYn" disabled
                         value="Y" <%=CmmUtil.checked(CmmUtil.nvl(rDTO.getNoticeYn()), "Y") %> />
-                아니오<input type="radio" name="noticeYn"
+                아니오<input type="radio" name="noticeYn" disabled
                           value="N" <%=CmmUtil.checked(CmmUtil.nvl(rDTO.getNoticeYn()), "N") %>/>
             </div>
         </div>
