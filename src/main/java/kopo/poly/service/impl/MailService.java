@@ -45,6 +45,10 @@ public class MailService implements IMailService {
         String title = CmmUtil.nvl(pDTO.getTitle()); // 메일제목
         String contents = CmmUtil.nvl(pDTO.getContents()); // 메일제목
         String fromMail = CmmUtil.nvl(pDTO.getFromMail());
+        if (fromMail.isEmpty()) {
+            fromMail = this.fromMail; // spring.mail.username에서 가져온 값을 사용
+        }
+
         String sendDt = CmmUtil.nvl(pDTO.getSendDt());
 
 
