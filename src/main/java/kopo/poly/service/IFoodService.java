@@ -1,5 +1,6 @@
 package kopo.poly.service;
 
+
 import kopo.poly.dto.FoodDTO;
 
 import java.util.List;
@@ -11,4 +12,5 @@ public interface IFoodService {
 
     // 스프링 스케줄러 실행을 함수 추가함
     void toDayFoodBatch() throws Exception;
+
 }
